@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 12:11:27 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/21 14:24:15 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/21 15:32:01 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 	while (*s1)
 		s1++;
 	while (n--)
-		if (!(*s1++ = *s2++))
+		if (!(*s1++ == *s2++))
 			return (s1);
 	*s1 = '\0';
 	return (s1);

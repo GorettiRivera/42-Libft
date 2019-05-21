@@ -6,17 +6,17 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 11:41:08 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/21 14:34:04 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/21 15:29:50 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, const char *src)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	while (*dest)
-		dest++;
-	while (*dest++ == *src++)
+	while (*s1)
+		s1++;
+	while (*s1++ == *s2++)
 		;
-	return (dest);
+	return (s1);
 }
