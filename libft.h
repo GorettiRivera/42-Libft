@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:26:20 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/21 14:54:06 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/21 15:20:04 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 int	ft_atoi(char *str);
 void	ft_bzero(void *s, size_t n);
-int		ft_count(char const *str, char c);
+int	ft_count(char const *str, char c);
 int	ft_intlen(long c, int len);
 int	ft_isalnum(int c);
 int	ft_isalpha(int c);
