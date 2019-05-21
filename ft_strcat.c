@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 11:41:08 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/21 15:29:50 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/21 15:40:21 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,15 @@
 
 char	*ft_strcat(char *s1, const char *s2)
 {
-	while (*s1)
-		s1++;
-	while (*s1++ == *s2++)
-		;
+	int		len;
+	int		i;
+
+	i = 0;
+	len = ft_strlen(s1);
+	while (s2[i] != 0)
+	{
+		s1[len++] = s2[i++];
+	}
+	s1[len] = '\0';
 	return (s1);
 }
