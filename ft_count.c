@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_count.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/14 13:52:00 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/21 14:27:56 by mrivera-         ###   ########.fr       */
+/*   Created: 2019/05/21 14:52:49 by mrivera-          #+#    #+#             */
+/*   Updated: 2019/05/21 14:53:15 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+int		ft_count(char const *str, char c)
 {
-	void *res;
+	int i;
+	int flag;
+	int count;
 
-	res = malloc((size));
-	if (res == 0)
-		return (NULL);
-	ft_bzero(res, size);
-	return (res);
+	i = 0;
+	flag = 0;
+	count = 0;
+	while (*str)
+	{
+		if (!flag && *str != c)
+		{
+			count++;
+		}
+		flag = (str[i] == c) ? 0 : 1;
+		str++;
+	}
+	return (count);
 }

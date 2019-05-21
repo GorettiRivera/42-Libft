@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/14 13:52:00 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/21 14:27:56 by mrivera-         ###   ########.fr       */
+/*   Created: 2019/05/21 13:15:05 by mrivera-          #+#    #+#             */
+/*   Updated: 2019/05/21 13:15:54 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	void *res;
-
-	res = malloc((size));
-	if (res == 0)
-		return (NULL);
-	ft_bzero(res, size);
-	return (res);
+	while (lst != NULL)
+	{
+		f(lst);
+		lst = lst->next;
+	}
 }

@@ -6,13 +6,13 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 10:41:03 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/17 10:45:15 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/17 15:04:31 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_intlen(long c, int len)
+int	ft_intlen(long c, int len)
 {
 	int base;
 

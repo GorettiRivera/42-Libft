@@ -6,13 +6,13 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 11:25:36 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/13 11:28:42 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/17 15:06:04 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	while (n--)
 	{
