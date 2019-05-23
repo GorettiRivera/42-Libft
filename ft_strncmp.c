@@ -14,21 +14,14 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t			i;
-	unsigned char	*s3;
-	unsigned char	*s4;
+	size_t	len;
+	size_t	len2;
+	int		result;
 
-	i = 0;
-	s3 = (unsigned char*)s1;
-	s4 = (unsigned char*)s2;
-	while ((s3[i] || s4[i]) != 0 && i < n)
-	{
-		if (s3[i] == s4[i])
-		{
-			i++;
-		}
-		else
-			return (s3[i] - s4[i]);
-	}
-	return (0);
+	len = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	len = (len <= len2) ? len + 1 : len2 + 1;
+	len = (len <= n) ? len : n;
+	result = ft_memcmp(s1, s2, len);
+	return (result);
 }
