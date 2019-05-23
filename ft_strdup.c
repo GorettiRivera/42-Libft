@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/17 13:29:23 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/07 15:09:49 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/23 09:42:28 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(const char *s1)
 {
-	int  i;
+	int		i;
 	char	*res;
-	int  len;
+	int		len;
 
 	i = 0;
 	len = ft_strlen(s1);
