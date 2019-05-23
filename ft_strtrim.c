@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/16 13:22:57 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/16 13:30:44 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/23 15:36:50 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_strtrim(char const *s)
 		return (NULL);
 	i = 0;
 	j = ft_strlen(s);
-	while (ft_strwhitespace(s[i]))
+	while (ft_strspace(s[i]))
 		i++;
-	while (ft_strwhitespace(s[j - 1]))
+	while (ft_strspace(s[j - 1]))
 		j--;
 	if (i > j)
 		j = i;

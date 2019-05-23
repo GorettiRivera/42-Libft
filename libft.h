@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:26:20 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/22 11:23:51 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/23 16:21:47 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(char *str, char *to_find);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
-int					ft_strwhitespace(char c);
+int					ft_strspace(char c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 
