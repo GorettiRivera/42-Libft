@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/07 17:24:26 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/08 11:20:37 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:24:25 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
+	if (n == 0 || dst == src)
+		return (dst);
 	while (n)
 	{
 		--n;

@@ -6,13 +6,13 @@
 #    By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/21 13:46:08 by mrivera-          #+#    #+#              #
-#    Updated: 2019/05/23 16:25:14 by mrivera-         ###   ########.fr        #
+#    Updated: 2019/05/24 10:00:28 by mrivera-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror -I $(INCLUDES)
 INCLUDES =  libft.h
-FILES = ft_atoi.c ft_bzero.c ft_count.c ft_intlen.c ft_isalnum.c ft_isalpha.c \
+FILES = ft_atoi.c ft_bzero.c ft_count.c ft_len.c ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd.c \
 		ft_lstdel.c ft_lstdelone.c ft_lstiter.c ft_lstmap.c ft_lstnew.c \
 		ft_memalloc.c ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c \

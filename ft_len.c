@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strwhitespace.c                                 :+:      :+:    :+:   */
+/*   ft_len.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/16 13:20:07 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/17 15:05:29 by mrivera-         ###   ########.fr       */
+/*   Created: 2019/05/17 10:41:03 by mrivera-          #+#    #+#             */
+/*   Updated: 2019/05/24 10:26:51 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strwhitespace(char c)
+int	ft_len(long c, int len)
 {
-	return (c == ' ' || c == '\n' || c == '\t');
+	int base;
+
+	base = 10;
+	while (c > 0)
+	{
+		c /= base;
+		len++;
+	}
+	return (len);
 }

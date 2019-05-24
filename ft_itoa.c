@@ -6,7 +6,7 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 10:39:41 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/23 10:10:48 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:00:47 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_itoa(int n)
 	str = "0123456789";
 	len = n < 0 ? 1 : 0;
 	nb = n < 0 ? -(long)n : n;
-	len = ft_intlen(nb, len);
+	len = ft_len(nb, len);
 	len = (n == 0) ? 1 : len;
 	if (!(res = (char *)malloc(sizeof(char) * (len + 1))))
 		return (NULL);

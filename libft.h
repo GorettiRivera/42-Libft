@@ -6,21 +6,21 @@
 /*   By: mrivera- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:26:20 by mrivera-          #+#    #+#             */
-/*   Updated: 2019/05/23 16:21:47 by mrivera-         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:00:11 by mrivera-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <stdlib.h>
+# include <string.h>
 # include <unistd.h>
 
 int					ft_atoi(char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_count(char const *str, char c);
-int					ft_intlen(long c, int len);
+int					ft_len(long c, int len);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
